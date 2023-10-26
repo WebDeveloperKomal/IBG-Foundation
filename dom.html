@@ -1,0 +1,392 @@
+<html lang="en">
+
+<head>
+    <style>
+        style {
+            margin-left: 0em;
+
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <title>IBGFoundation</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./assets/Images/urllogo.png">
+    <link rel="stylesheet" href="styles.e1e15dd9840a9f188756.css">
+    <style>
+        .preloader-backdrop[_ngcontent-onm-c0] {
+            background-color: transparent
+        }
+
+        .page-preloader[_ngcontent-onm-c0] {
+            background-color: #fff;
+            box-shadow: 0 5px 20px #d6dee4
+        }
+
+        @font-face {
+            font-family: segoeui;
+            src: url(segoeui.6581cfaeee8057734a3f.ttf)
+        }
+
+        #segoeui[_ngcontent-onm-c0],
+        *[_ngcontent-onm-c0] {
+            font-family: segoeui
+        }
+
+        @font-face {
+            font-family: mavenpro;
+            src: url(maven-pro.regular.be9b3af6826594451678.ttf)
+        }
+
+        #mavenpro[_ngcontent-onm-c0] {
+            font-family: mavenpro
+        }
+
+        @font-face {
+            font-family: segoeuil;
+            src: url(segoeuil.5076583fa2a14cd2cf36.ttf)
+        }
+
+        #segoeuil[_ngcontent-onm-c0] {
+            font-family: segoeuil
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: 'Maven Pro';
+            src: url(maven-pro.regular.be9b3af6826594451678.ttf)
+        }
+
+        #mavenpro[_ngcontent-onm-c1] {
+            font-family: 'Maven Pro'
+        }
+
+        a[_ngcontent-onm-c1] {
+            font-size: 16px;
+            font-family: 'Segoe UI';
+            color: #000
+        }
+
+        a[_ngcontent-onm-c1]:focus,
+        a[_ngcontent-onm-c1]:hover {
+            color: #e21c21
+        }
+
+        .dropdown[_ngcontent-onm-c1] {
+            position: relative;
+            display: inline-block
+        }
+
+        .dropdown-content[_ngcontent-onm-c1] {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            margin-left: 2.3em;
+            min-width: 140px;
+            padding: 0;
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .2);
+            z-index: 1
+        }
+
+        .dropdown-content[_ngcontent-onm-c1] a[_ngcontent-onm-c1] {
+            color: #000;
+            padding: 6px 8px;
+            text-decoration: none;
+            display: block
+        }
+
+        .dropdown-content[_ngcontent-onm-c1] a[_ngcontent-onm-c1]:hover {
+            color: #e21c21
+        }
+
+        .dropdown[_ngcontent-onm-c1]:hover .dropdown-content[_ngcontent-onm-c1] {
+            display: block
+        }
+
+        @media screen and (min-width:1024px) and (max-width:1124px) {
+            #headerlogo[_ngcontent-onm-c1] {
+                margin-left: -7em
+            }
+
+            #headerlink[_ngcontent-onm-c1] {
+                margin-left: 1em
+            }
+        }
+    </style>
+    <style>
+        a[_ngcontent-onm-c2] {
+            color: #fff;
+            font-family: 'Segoe UI';
+            margin-left: 0;
+            font-size: 16px
+        }
+
+        a[_ngcontent-onm-c2] [_ngcontent-onm-c2]:hover {
+            color: #e21c21
+        }
+    </style>
+    <style>
+        #segoeuil[_ngcontent-onm-c3] {
+            font-family: 'Segoe UI'
+        }
+
+        img[_ngcontent-onm-c3] {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%
+        }
+
+        #bgimg[_ngcontent-onm-c3] {
+            background-image: url('banner 7.e8221a8dc454eb4cbb5a.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 390px
+        }
+
+        .img-txt[_ngcontent-onm-c3] {
+            font-family: 'Segoe UI';
+            font-size: 33px;
+            color: #fff
+        }
+
+        #serviceimg[_ngcontent-onm-c3] {
+            width: auto
+        }
+
+        .vl[_ngcontent-onm-c3] {
+            border-left: 1px solid #d71f26;
+            height: 300px
+        }
+
+        #button1[_ngcontent-onm-c3] {
+            background-color: rgba(0, 57, 116, 1)
+        }
+
+        #button1[_ngcontent-onm-c3]:hover {
+            background-color: #d71f26 !important;
+            border-color: #d71f26 !important
+        }
+
+        #divoverimage[_ngcontent-onm-c3] {
+            position: absolute;
+            top: 309px;
+            background-color: red;
+            opacity: .4
+        }
+
+        #divoverimage[_ngcontent-onm-c3]:hover {
+            cursor: pointer
+        }
+
+        #hoverbtn[_ngcontent-onm-c3] {
+            color: #fff;
+            font-size: 17px;
+            margin-left: 15px
+        }
+
+        #hoverbtn[_ngcontent-onm-c3]:hover,
+        #hoverbutton[_ngcontent-onm-c3]:hover {
+            color: red;
+            background-color: #fff;
+            border: 1px #fff
+        }
+
+        #move1[_ngcontent-onm-c3] {
+            position: absolute;
+            top: 309px
+        }
+
+        #move2[_ngcontent-onm-c3] {
+            position: absolute;
+            top: 60px;
+            right: 55px
+        }
+
+        #hoverbutton[_ngcontent-onm-c3] {
+            cursor: pointer;
+            color: #fff;
+            font-size: 17px;
+            margin-left: 15px;
+            padding: 5px 10px
+        }
+
+        #hover1[_ngcontent-onm-c3]:hover,
+        #hover2[_ngcontent-onm-c3]:hover,
+        #hover3[_ngcontent-onm-c3]:hover,
+        #hover4[_ngcontent-onm-c3]:hover,
+        #hover5[_ngcontent-onm-c3]:hover,
+        #hover6[_ngcontent-onm-c3]:hover {
+            color: red
+        }
+
+        #divaside[_ngcontent-onm-c3] {
+            position: absolute;
+            top: 0;
+            right: 16px;
+            background-color: gray;
+            opacity: .4
+        }
+
+        .vertical[_ngcontent-onm-c3] {
+            border-left: 1px solid gray;
+            height: 250px;
+            margin-top: 25px
+        }
+
+        .text-center[_ngcontent-onm-c3] {
+            font-family: 'Segoe UI'
+        }
+
+        p[_ngcontent-onm-c3] {
+            font-family: segoeui
+        }
+    </style>
+    <style></style>
+</head>
+
+<body>
+    <app-root _nghost-onm-c0="" ng-version="8.1.3">
+        <app-header _ngcontent-onm-c0="" _nghost-onm-c1="">
+            <div _ngcontent-onm-c1="" class="col-sm-12 col-md-12 col-lg-12 col-xl-12"
+                style="background:#E21C21;padding:0.2%;height: 3em;">
+                <p _ngcontent-onm-c1=""
+                    style="color: white;margin-left: 10em;font-family: 'Segoe UI';font-size: 16px;margin-top: 0.5em;">
+                    email : contact@ibgfoundation.com
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact : +91
+                    7391012316 <button _ngcontent-onm-c1="" class="btn" routerlink="/donate"
+                        style="margin-left:45%;width: 10em;background-color: rgb(185, 31, 31);color: white;margin-top: -1em;margin-bottom: -1em;"
+                        tabindex="0">Donate Now</button></p>
+            </div>
+            <div _ngcontent-onm-c1="" class="row" style="margin-left: 9em;padding: 1%;"><img _ngcontent-onm-c1="" alt=""
+                    class="img-fluid" id="headerlogo" routerlink="/index" src="./assets/Images/LOGO.png" tabindex="0"><a
+                    _ngcontent-onm-c1="" id="headerlink" routerlink="/index" style="margin-left: 19em;"
+                    href="/index">HOME</a><a _ngcontent-onm-c1="" routerlink="/aboutus" style="margin-left: 2.3em;"
+                    href="/aboutus">ABOUT US</a>
+                <div _ngcontent-onm-c1="" class="dropdown"><a _ngcontent-onm-c1="" routerlink="/aboutus"
+                        style="margin-left: 2.3em;" href="/aboutus">FUNCTIONAL AREA</a>
+                    <div _ngcontent-onm-c1="" class="dropdown-content"><a _ngcontent-onm-c1="" routerlink="/health"
+                            style="margin-left: 2em;" href="/health">HEALTH</a><a _ngcontent-onm-c1=""
+                            routerlink="/education" style="margin-left: 1.5em;" href="/education">EDUCATION</a><a
+                            _ngcontent-onm-c1="" routerlink="/nature" style="margin-left: 2em;"
+                            href="/nature">NATURE</a></div>
+                </div><a _ngcontent-onm-c1="" routerlink="/empvol" style="margin-left: 2.3em;" href="/empvol">EMPLYOEE
+                    VOLUNTEERING</a><a _ngcontent-onm-c1="" routerlink="/event" style="margin-left: 2.3em;"
+                    href="/event">EVENTS</a><a _ngcontent-onm-c1="" routerlink="/contactus" style="margin-left: 2.3em;"
+                    href="/contactus">CONTACT US</a>
+            </div>
+        </app-header><router-outlet _ngcontent-onm-c0=""></router-outlet><app-donate _nghost-onm-c4="">
+            <div _ngcontent-onm-c4="" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div _ngcontent-onm-c4="" style="background-color: #eaeded;padding: 1.5em;">
+                    <p _ngcontent-onm-c4="" style="font-size: 2em;margin-left: 3.8em;">Donate Now</p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </app-donate><app-footer _ngcontent-onm-c0="" _nghost-onm-c2="">
+            <div _ngcontent-onm-c2="" style="align-items: center;background-color: rgb(173, 173, 173);padding: 1%;">
+                <h5 _ngcontent-onm-c2=""
+                    style="color: rgb(218, 47, 47);align-items: center;margin-left: 35%;font-size: 31px;font-family: 'Segoe UI';">
+                    SUBSCRIBE OUR NEWS LETTER</h5>
+                <hr _ngcontent-onm-c2=""
+                    style="align-items: center;margin-left: 45%;width: 10em;margin-top: 0em;font-family: 'Segoe UI';">
+                <p _ngcontent-onm-c2="" style="font-size: 21px;margin-left: 20%;font-family: 'Segoe UI';">Join our
+                    monthly
+                    newsletter and we will keep you in the loop about all of our latest news</p>
+            </div>
+            <div _ngcontent-onm-c2="" class="wrapper">
+                <div _ngcontent-onm-c2="" class="col-sm-12 col-md-12 col-lg-12" id="segoeui"
+                    style="background-color: black;margin-bottom:20px;">
+                    <div _ngcontent-onm-c2="" class="col-sm-12 col-md-12 col-lg-12"
+                        style="background-color: black;padding: 5%;">
+                        <div _ngcontent-onm-c2="" class="row" style="padding-bottom: 25px;">
+                            <div _ngcontent-onm-c2="" class="col-sm-4 col-md-4 col-lg-4 ">
+                                <div _ngcontent-onm-c2="" class="row"
+                                    style="margin-top: 20px;width: 364px;margin-left: 3.3em;"><img _ngcontent-onm-c2=""
+                                        src="./assets/Images/IMG-20190327-WA0036 (1).jpg"
+                                        style="height:140px; width:280px;"></div><a _ngcontent-onm-c2=""
+                                    href="https://www.facebook.com/ibgfoundation/" target="blank"><img
+                                        _ngcontent-onm-c2="" src="./assets/Images/FB logo.png"
+                                        style="height: 30px; width: 70px;margin-left: 3.30em;"></a>
+                            </div>
+                            <div _ngcontent-onm-c2="" class="col-sm-2 col-md-2 col-lg-2" style="margin-left: 42px;">
+                                <p _ngcontent-onm-c2=""
+                                    style="color: white;font-family: 'Segoe UI';margin-left: 0em;font-size: 21px;">
+                                    Useful Links</p><a _ngcontent-onm-c2="" routerlink="/volunteer"
+                                    href="/volunteer">Become Volunteer</a><br _ngcontent-onm-c2=""><a
+                                    _ngcontent-onm-c2="" routerlink="/donate" href="/donate">Donate</a><br
+                                    _ngcontent-onm-c2=""><a _ngcontent-onm-c2="" routerlink="/event"
+                                    href="/event">Gallery</a><br _ngcontent-onm-c2="">
+                            </div>
+                            <div _ngcontent-onm-c2="" class="col-sm-3 col-md-3 col-lg-3" style="margin-left: 0em;">
+                                <p _ngcontent-onm-c2=""
+                                    style="color: white;font-family: 'Segoe UI';margin-left: 0em;font-size: 21px;">
+                                    Newsletter</p>
+                                <p _ngcontent-onm-c2=""
+                                    style="color: white;font-family: 'Segoe UI';margin-left: 0em;font-size: 16px;">
+                                    Join our monthly newsletter and<br _ngcontent-onm-c2=""> we will
+                                    keep you in the loop<br _ngcontent-onm-c2=""> about all of our
+                                    latest news</p><input _ngcontent-onm-c2="" style="width: 12em;">
+                            </div>
+                            <div _ngcontent-onm-c2="" class="col-sm-2 col-md-2 col-lg-2" style="margin-left: 0em;">
+                                <p _ngcontent-onm-c2=""
+                                    style="color: white;font-family: 'Segoe UI';margin-left: 0em;font-size: 21px;">
+                                    Contact Us</p>
+                                <p _ngcontent-onm-c2=""
+                                    style="color: white;font-family: 'Segoe UI';margin-left: 0em;font-size: 21px;">
+                                    IBG Foundation</p>
+                                <p _ngcontent-onm-c2=""
+                                    style="color: white;font-family: 'Segoe UI';margin-left: 0em;font-size: 16px;">
+                                    SHARV PLAZA Sr .No.295, 3rd Floor, Plot No.13, Opp A.M.College,
+                                    Mahadev Nagar, Hadapsar, Pune: 411028. Email Us:
+                                    contact@ibgfincon.com<br _ngcontent-onm-c2=""> Ph. : 020-6749 1919
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </app-footer></app-root>
+    <script src="runtime-es2015.c5fa8325f89fc516600b.js" type="module"></script>
+    <script src="runtime-es5.c5fa8325f89fc516600b.js" nomodule="" defer=""></script>
+    <script src="polyfills-es5.8e50a9832860f7cf804a.js" nomodule="" defer=""></script>
+    <script src="polyfills-es2015.5b10b8fd823b6392f1fd.js" type="module"></script>
+    <script src="scripts.52229e59d1bbbe6890c4.js" defer=""></script>
+    <script src="main-es2015.04b43fd34fce43aae705.js" type="module"></script>
+    <script src="main-es5.04b43fd34fce43aae705.js" nomodule="" defer=""></script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+

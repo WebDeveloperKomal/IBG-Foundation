@@ -1,0 +1,229 @@
+.preloader-backdrop[_ngcontent-onm-c0] {
+    background-color: transparent
+}
+
+.page-preloader[_ngcontent-onm-c0] {
+    background-color: #fff;
+    box-shadow: 0 5px 20px #d6dee4
+}
+
+@font-face {
+    font-family: segoeui;
+    src: url(segoeui.6581cfaeee8057734a3f.ttf)
+}
+
+#segoeui[_ngcontent-onm-c0],
+*[_ngcontent-onm-c0] {
+    font-family: segoeui
+}
+
+@font-face {
+    font-family: mavenpro;
+    src: url(maven-pro.regular.be9b3af6826594451678.ttf)
+}
+
+#mavenpro[_ngcontent-onm-c0] {
+    font-family: mavenpro
+}
+
+@font-face {
+    font-family: segoeuil;
+    src: url(segoeuil.5076583fa2a14cd2cf36.ttf)
+}
+
+#segoeuil[_ngcontent-onm-c0] {
+    font-family: segoeuil
+}
+
+
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url(maven-pro.regular.be9b3af6826594451678.ttf)
+}
+
+#mavenpro[_ngcontent-onm-c1] {
+    font-family: 'Maven Pro'
+}
+
+a[_ngcontent-onm-c1] {
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    color: #000
+}
+
+a[_ngcontent-onm-c1]:focus,
+a[_ngcontent-onm-c1]:hover {
+    color: #e21c21
+}
+
+.dropdown[_ngcontent-onm-c1] {
+    position: relative;
+    display: inline-block
+}
+
+.dropdown-content[_ngcontent-onm-c1] {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    margin-left: 2.3em;
+    min-width: 140px;
+    padding: 0;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 1
+}
+
+.dropdown-content[_ngcontent-onm-c1] a[_ngcontent-onm-c1] {
+    color: #000;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block
+}
+
+.dropdown-content[_ngcontent-onm-c1] a[_ngcontent-onm-c1]:hover {
+    color: #e21c21
+}
+
+.dropdown[_ngcontent-onm-c1]:hover .dropdown-content[_ngcontent-onm-c1] {
+    display: block
+}
+
+@media screen and (min-width:1024px) and (max-width:1124px) {
+    #headerlogo[_ngcontent-onm-c1] {
+        margin-left: -7em
+    }
+
+    #headerlink[_ngcontent-onm-c1] {
+        margin-left: 1em
+    }
+}
+
+
+a[_ngcontent-onm-c2] {
+    color: #fff;
+    font-family: 'Segoe UI';
+    margin-left: 0;
+    font-size: 16px
+}
+
+a[_ngcontent-onm-c2] [_ngcontent-onm-c2]:hover {
+    color: #e21c21
+}
+
+
+
+#segoeuil[_ngcontent-onm-c3] {
+    font-family: 'Segoe UI'
+}
+
+img[_ngcontent-onm-c3] {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%
+}
+
+#bgimg[_ngcontent-onm-c3] {
+    background-image: url('banner 7.e8221a8dc454eb4cbb5a.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 390px
+}
+
+.img-txt[_ngcontent-onm-c3] {
+    font-family: 'Segoe UI';
+    font-size: 33px;
+    color: #fff
+}
+
+#serviceimg[_ngcontent-onm-c3] {
+    width: auto
+}
+
+.vl[_ngcontent-onm-c3] {
+    border-left: 1px solid #d71f26;
+    height: 300px
+}
+
+#button1[_ngcontent-onm-c3] {
+    background-color: rgba(0, 57, 116, 1)
+}
+
+#button1[_ngcontent-onm-c3]:hover {
+    background-color: #d71f26 !important;
+    border-color: #d71f26 !important
+}
+
+#divoverimage[_ngcontent-onm-c3] {
+    position: absolute;
+    top: 309px;
+    background-color: red;
+    opacity: .4
+}
+
+#divoverimage[_ngcontent-onm-c3]:hover {
+    cursor: pointer
+}
+
+#hoverbtn[_ngcontent-onm-c3] {
+    color: #fff;
+    font-size: 17px;
+    margin-left: 15px
+}
+
+#hoverbtn[_ngcontent-onm-c3]:hover,
+#hoverbutton[_ngcontent-onm-c3]:hover {
+    color: red;
+    background-color: #fff;
+    border: 1px #fff
+}
+
+#move1[_ngcontent-onm-c3] {
+    position: absolute;
+    top: 309px
+}
+
+#move2[_ngcontent-onm-c3] {
+    position: absolute;
+    top: 60px;
+    right: 55px
+}
+
+#hoverbutton[_ngcontent-onm-c3] {
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 5px 10px
+}
+
+#hover1[_ngcontent-onm-c3]:hover,
+#hover2[_ngcontent-onm-c3]:hover,
+#hover3[_ngcontent-onm-c3]:hover,
+#hover4[_ngcontent-onm-c3]:hover,
+#hover5[_ngcontent-onm-c3]:hover,
+#hover6[_ngcontent-onm-c3]:hover {
+    color: red
+}
+
+#divaside[_ngcontent-onm-c3] {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    background-color: gray;
+    opacity: .4
+}
+
+.vertical[_ngcontent-onm-c3] {
+    border-left: 1px solid gray;
+    height: 250px;
+    margin-top: 25px
+}
+
+.text-center[_ngcontent-onm-c3] {
+    font-family: 'Segoe UI'
+}
+
+p[_ngcontent-onm-c3] {
+    font-family: segoeui
+}
