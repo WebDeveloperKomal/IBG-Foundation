@@ -354,7 +354,7 @@
 
 .elementor-158 .elementor-element.elementor-element-ffd0a6b:not(.elementor-motion-effects-element-type-background)>.elementor-widget-wrap,
 .elementor-158 .elementor-element.elementor-element-ffd0a6b>.elementor-widget-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("Homepage-02.jpg");
+    background-image: url("Homepage-02.jpg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4631,4 +4631,47 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
 .eicon-close:before {
     /* content: "\e87f"; */
     display: none;
+}
+
+.elementor-message.elementor-message-danger:before {
+    display: none;
+}
+
+
+/* ----------------------------------------------------------- */
+
+.eicon-chevron-right:before {
+    /* content: "\e87d"; */
+    display: none;
+}
+
+.eicon-chevron-left::before {
+    /* content: ""; */
+    display: none;
+}
+
+.eicon-frame-expand::before {
+    /* content: ""; */
+    display: none;
+}
+
+.eicon-zoom-in-bold::before {
+    /* content: ""; */
+    display: none;
+}
+
+.eicon-share-arrow::before {
+    /* content: ""; */
+    display: none;
+}
+
+
+
+.elementor-158 .elementor-element.elementor-element-7458668 .ekit_double_button {
+    width: 97%;
+}
+
+
+.elementor-158 .elementor-element.elementor-element-455f691 .ekit_double_button {
+    width: 97%;
 }

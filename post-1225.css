@@ -1,3 +1,24 @@
+/* .phone-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    left: 10px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 10px;
+} */
+
+
+
+/* ------------------------------------------------------------------ */
+
+
 .elementor-1225 .elementor-element.elementor-element-6c67cce>.elementor-container {
     min-height: 550px;
 }
@@ -855,4 +876,10 @@
     .elementor-1225 .elementor-element.elementor-element-4d1540c {
         width: 100%;
     }
+}
+
+
+.elementor-1225 .elementor-element.elementor-element-90b92d5 .elementor-icon {
+    font-size: 22px;
+    border-width: 1px 1px 1px 1px;
 }
