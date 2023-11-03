@@ -861,7 +861,7 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-61cba63 .elem
 }
 
 .elementor-158 .elementor-element.elementor-element-7458668 .ekit_double_button {
-    width: 65%;
+    width: 99%;
 }
 
 .elementor-158 .elementor-element.elementor-element-7458668 .ekit-double-btn:not(:last-child) {
@@ -1149,7 +1149,7 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-61cba63 .elem
 }
 
 .elementor-158 .elementor-element.elementor-element-455f691 .ekit_double_button {
-    width: 65%;
+    width: 99%;
 }
 
 .elementor-158 .elementor-element.elementor-element-455f691 .ekit-double-btn:not(:last-child) {
@@ -4665,7 +4665,7 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
     display: none;
 }
 
-
+/* 
 
 .elementor-158 .elementor-element.elementor-element-7458668 .ekit_double_button {
     width: 97%;
@@ -4675,3 +4675,39 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
 .elementor-158 .elementor-element.elementor-element-455f691 .ekit_double_button {
     width: 97%;
 }
+ */
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+@media screen and (min-width:770px) {
+    #recent1 {
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width:1025px) {
+    #DonateFund {
+        width: 500px;
+    }
+
+    #ViewDetails {
+        width: 500px;
+    }
+
+    #recent1 {
+        width: 370px;
+
+    }
+
+}
+
+/* 
+@media screen and (min-width:1095px){
+    .elementor-158 .elementor-element.elementor-element-455f691 .ekit_double_button{
+        width: ;
+    }
+
+} */
