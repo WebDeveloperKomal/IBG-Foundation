@@ -1155,7 +1155,7 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-61cba63 .elem
 }
 
 .elementor-158 .elementor-element.elementor-element-455f691 .ekit_double_button {
-    width: 99%;
+    width: 104%;
 }
 
 .elementor-158 .elementor-element.elementor-element-455f691 .ekit-double-btn:not(:last-child) {
@@ -4732,14 +4732,15 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
 } */
 
 
-@media screen and (max-width:767px){
-    .elementor-28 .elementor-element.elementor-element-9c57e3b{
+@media screen and (max-width:767px) {
+    .elementor-28 .elementor-element.elementor-element-9c57e3b {
         justify-content: center;
     }
+
     .elementor-28 .elementor-element.elementor-element-1af7fd2 .elementor-icon-list-text {
         padding: 0;
-       
+
     }
-    
+
 
 }
