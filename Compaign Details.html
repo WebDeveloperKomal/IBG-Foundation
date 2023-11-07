@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="post-158.css">
     <link rel="stylesheet" href="post-1294.css">
+    <link rel="stylesheet" href="Campaign Details.js">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -2590,44 +2592,59 @@
 
                                                             <div
                                                                 class="elementor-form-fields-wrapper elementor-labels-">
+
+
                                                                 <div
                                                                     class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
                                                                     <label for="form-field-name"
                                                                         class="elementor-field-label elementor-screen-only">
                                                                         Name </label>
                                                                     <input size="1" type="text" name="form_fields[name]"
-                                                                        id="form-field-name"
+                                                                        id="name"
                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                         placeholder="Enter Name*">
                                                                 </div>
+
+
+
+
                                                                 <div
                                                                     class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-field_5accbcf elementor-col-100 elementor-field-required">
                                                                     <label for="form-field-field_5accbcf"
                                                                         class="elementor-field-label elementor-screen-only">
                                                                         Email </label>
                                                                     <input size="1" type="email"
-                                                                        name="form_fields[field_5accbcf]"
-                                                                        id="form-field-field_5accbcf"
+                                                                        name="form_fields[field_5accbcf]" id="email"
                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                         placeholder="Enter Email*" required="required"
                                                                         aria-required="true">
                                                                 </div>
+
+
+
+
                                                                 <div
                                                                     class="elementor-field-type-number elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
                                                                     <label for="form-field-email"
                                                                         class="elementor-field-label elementor-screen-only">
                                                                         Number </label>
                                                                     <input type="number" name="form_fields[email]"
-                                                                        id="form-field-email"
+                                                                        id="number"
                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                         placeholder="Enter Phone No.*"
                                                                         required="required" aria-required="true" min=""
                                                                         max="">
                                                                 </div>
+
+
+
                                                                 <div
                                                                     class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-60 e-form__buttons">
+
+
                                                                     <button type="submit"
-                                                                        class="elementor-button elementor-size-sm">
+                                                                        class="elementor-button elementor-size-sm"
+                                                                        onclick="saveCampaignForm(); reset(); return false;">
                                                                         <span>
                                                                             <span class=" elementor-button-icon">
                                                                             </span>
@@ -2635,7 +2652,13 @@
                                                                                 Now</span>
                                                                         </span>
                                                                     </button>
+
+
                                                                 </div>
+
+
+
+
                                                             </div>
                                                         </form>
                                                     </div>

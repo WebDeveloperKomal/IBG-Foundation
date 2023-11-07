@@ -883,3 +883,20 @@
     font-size: 22px;
     border-width: 1px 1px 1px 1px;
 }
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width:767px) {
+    .elementor-28 .elementor-element.elementor-element-9c57e3b {
+        justify-content: center;
+    }
+
+    .elementor-28 .elementor-element.elementor-element-1af7fd2 .elementor-icon-list-text {
+        padding: 0;
+
+    }
+
+
+}
