@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="post-158.css">
     <link rel="stylesheet" href="post-46.css">
-    <!-- <link rel="stylesheet" href="Single Post.js"> -->
+    <script src="Single-Post.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -2114,8 +2114,7 @@
 
 
 
-                                        <form action="https://demo.bosathemes.com/unbound/wp-comments-post.php"
-                                            method="post" id="commentform" class="comment-form" novalidate>
+                                        <form action="#" method="post" id="commentform" class="comment-form" novalidate>
 
 
                                             <p class="comment-notes">
@@ -2180,10 +2179,14 @@
 
 
 
-                                            <p class="form-submit"><input name="submit" type="submit" id="submit"
-                                                    class="submit" value="Post Comment" />
+                                            <p class="form-submit">
+                                                <input name="submit" type="submit" id="submit" class="submit"
+                                                    value="Post Comment"
+                                                    onclick="saveSinglePostForm(); reset(); return false;" />
+
                                                 <input type='hidden' name='comment_post_ID' value='78'
                                                     id='comment_post_ID' />
+
                                                 <input type='hidden' name='comment_parent' id='comment_parent'
                                                     value='0' />
                                             </p>

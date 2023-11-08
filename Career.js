@@ -1,35 +1,34 @@
-function saveContactForm() {
+function saveCareerForm() {
 
-    var saveContactForm = {
+    var saveCareerForm = {
+
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        phoneNumber: document.getElementById('phoneNumber').value,
+        position: document.getElementById('position').value,
         message: document.getElementById('message').value
     }
 
-    console.log(JSON.stringify(saveContactForm));
+    console.log(JSON.stringify(saveCareerForm));
 
-    if (saveContactForm != null) {
+    if (saveCareerForm != null) {
         alert("message send successfully!")
 
     }
+
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');
 
 
-    fetch("http://localhost:8080/add-contactform", {
+    fetch("http://localhost:8080/add-careerform", {
         method: 'POST',
-        body: JSON.stringify(saveContactForm),
+        body: JSON.stringify(saveCareerForm),
         headers: headers,
     })
 
 
         .then(response => response.json())
         .then(json => console.log(json))
-        .catch(error => console.error('Error:', error));
-
-
+        .then(error => console.error('Error:', error));
 }

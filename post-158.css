@@ -4628,7 +4628,11 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
     }
 }
 
-
+/* --------------------------------------------------------------- */
+.elementor-message.elementor-message-danger {
+    color: #d9534f;
+    display: none;
+}
 
 
 .eicon-menu-bar:before {
