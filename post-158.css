@@ -4644,6 +4644,31 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
     display: none;
 }
 
+/* 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.jumping-text {
+    animation: jump 1s infinite;
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 
 
 
