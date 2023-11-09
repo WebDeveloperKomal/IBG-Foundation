@@ -18,10 +18,6 @@
 
 /* --------------------------------------------------------------------------- */
 
-
-
-
-
 .elementor-1157 .elementor-element.elementor-element-556f8b4>.elementor-container {
     min-height: 550px;
 }
@@ -106,7 +102,7 @@
 .elementor-1157 .elementor-element.elementor-element-fb5ff0f:not(.elementor-motion-effects-element-type-background)>.elementor-widget-wrap,
 .elementor-1157 .elementor-element.elementor-element-fb5ff0f>.elementor-widget-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: var(--e-global-color-21bfb04);
-    box-shadow: 2px 2px 2px 2px;
+
 }
 
 .elementor-1157 .elementor-element.elementor-element-fb5ff0f>.elementor-element-populated,
@@ -172,7 +168,7 @@
 .elementor-1157 .elementor-element.elementor-element-e34fba7>.elementor-element-populated>.elementor-background-overlay,
 .elementor-1157 .elementor-element.elementor-element-e34fba7>.elementor-background-slideshow {
     border-radius: 25px 25px 25px 25px;
-    box-shadow: 2px 2px 2px 3px;
+
 }
 
 .elementor-1157 .elementor-element.elementor-element-e34fba7>.elementor-element-populated>.elementor-background-overlay {
@@ -241,7 +237,7 @@
 .elementor-1157 .elementor-element.elementor-element-f794831>.elementor-element-populated>.elementor-background-overlay,
 .elementor-1157 .elementor-element.elementor-element-f794831>.elementor-background-slideshow {
     border-radius: 25px 25px 25px 25px;
-    box-shadow: 2px 2px 2px 3px;
+
 }
 
 .elementor-1157 .elementor-element.elementor-element-f794831>.elementor-element-populated>.elementor-background-overlay {
@@ -293,7 +289,7 @@
 .elementor-1157 .elementor-element.elementor-element-39e2645:not(.elementor-motion-effects-element-type-background)>.elementor-widget-wrap,
 .elementor-1157 .elementor-element.elementor-element-39e2645>.elementor-widget-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: var(--e-global-color-21bfb04);
-    box-shadow: 2px 2px 2px 3px;
+
 }
 
 .elementor-1157 .elementor-element.elementor-element-39e2645>.elementor-element-populated,

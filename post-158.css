@@ -4721,7 +4721,7 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: slideIn 1.7s ease-out;
+    animation: slideIn 0.8s ease-out;
 }
 
 
@@ -4729,7 +4729,7 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: bounce 1.7s ease-out;
+    animation: bounce 0.8s ease-out;
     font-size: 20px;
 }
 
