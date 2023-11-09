@@ -14,6 +14,37 @@
     right: 10px;
 } */
 
+/* .zoomable-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoomable-image:hover {
+    transform: scale(1.2);
+} */
+
+/* .zoomable-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoomable-icon:hover {
+    transform: scale(1.2);
+} */
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.zoomable-icon {
+    animation: zoomInOut 2s infinite alternate;
+}
 
 
 /* ------------------------------------------------------------------ */

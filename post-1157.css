@@ -1,3 +1,27 @@
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.zoomable-icon {
+    animation: zoomInOut 2s infinite alternate;
+}
+
+
+
+/* --------------------------------------------------------------------------- */
+
+
+
+
+
 .elementor-1157 .elementor-element.elementor-element-556f8b4>.elementor-container {
     min-height: 550px;
 }
