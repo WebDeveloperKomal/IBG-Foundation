@@ -5230,12 +5230,13 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
 
 @media screen and (max-width:2560px) {
     .elementor-158 .elementor-element.elementor-element-455f691 .ekit_double_button {
-        width: 104%;
+        width: 110%;
         margin-top: 6px;
     }
 
     #bu1 {
         margin-top: 10px;
+
     }
 
     #bu2 {
@@ -5246,7 +5247,10 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
         margin-top: -70px;
     }
 
-
+    /* 
+    #image {
+        height: 223px;
+    } */
 }
 
 
@@ -5260,6 +5264,12 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
         margin-top: 10px;
         margin-left: 2px;
     }
+
+    #ele2 {
+        margin-top: 30px;
+    }
+
+
 }
 
 @media screen and (max-width:425px) {
