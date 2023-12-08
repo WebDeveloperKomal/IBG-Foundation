@@ -11,7 +11,7 @@
 }
 
 .elementor-1294 .elementor-element.elementor-element-39f2196>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.7;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
@@ -507,7 +507,7 @@ body:not(.rtl) .elementor-1294 .elementor-element.elementor-element-6e52d7e .ele
 }
 
 .elementor-1294 .elementor-element.elementor-element-0204322>.elementor-element-populated>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.7;
 }
 

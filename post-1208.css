@@ -11,7 +11,7 @@
 }
 
 .elementor-1208 .elementor-element.elementor-element-380c144>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.7;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
@@ -241,7 +241,7 @@
 }
 
 .elementor-1208 .elementor-element.elementor-element-af5e04c>.elementor-element-populated>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.6;
 }
 

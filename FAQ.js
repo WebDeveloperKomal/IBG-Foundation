@@ -1,5 +1,4 @@
 function saveFaqForm() {
-
     var saveFaqForm = {
 
         name: document.getElementById('name').value,
@@ -18,12 +17,12 @@ function saveFaqForm() {
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');
 
+
     fetch("http://localhost:8080/add-faqform", {
         method: 'POST',
         body: JSON.stringify(saveFaqForm),
         headers: headers,
     })
-
 
         .then(response => response.json())
         .then(json => console.log(json))

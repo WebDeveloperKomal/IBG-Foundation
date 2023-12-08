@@ -11,7 +11,7 @@
 }
 
 .elementor-1347 .elementor-element.elementor-element-bb2471c>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.7;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
@@ -72,7 +72,7 @@
 }
 
 .elementor-1347 .elementor-element.elementor-element-bd31700>.elementor-element-populated>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.65;
 }
 
@@ -1162,7 +1162,7 @@ body:not(.rtl) .elementor-1347 .elementor-element.elementor-element-09c5b8e .ele
 }
 
 .elementor-1347 .elementor-element.elementor-element-c0a73b8>.elementor-element-populated>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.65;
 }
 
@@ -1373,7 +1373,7 @@ body:not(.rtl) .elementor-1347 .elementor-element.elementor-element-f2a75e0 .ele
 }
 
 .elementor-1347 .elementor-element.elementor-element-3b43667>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.65;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
@@ -1782,4 +1782,11 @@ body:not(.rtl) .elementor-1347 .elementor-element.elementor-element-f2a75e0 .ele
     .elementor-1347 .elementor-element.elementor-element-004c6a8 {
         width: 100%;
     }
+}
+
+
+/* ------------------------------------------------------- */
+
+#edu {
+    margin-top: -93px;
 }

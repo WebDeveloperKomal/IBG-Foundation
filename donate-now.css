@@ -246,7 +246,7 @@ p[_ngcontent-onm-c3] {
 }
 
 .elementor-1225 .elementor-element.elementor-element-6c67cce>.elementor-background-overlay {
-    background-color: var(--e-global-color-e5e9561);
+    background-color: #151515b8;
     opacity: 0.7;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
@@ -1091,13 +1091,5 @@ p[_ngcontent-onm-c3] {
         width: 100%;
     }
 
-    
+
 }
-
-
-
-
-
-
-
-
