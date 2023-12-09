@@ -1790,3 +1790,10 @@ body:not(.rtl) .elementor-1347 .elementor-element.elementor-element-f2a75e0 .ele
 #edu {
     margin-top: -93px;
 }
+
+
+@media screen and (max-width:425px) {
+    #edu {
+        margin-top: -57px;
+    }
+}

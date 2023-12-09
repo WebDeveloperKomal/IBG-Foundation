@@ -5189,7 +5189,7 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
 }
 
 #number {
-    margin-left: -30px;
+    margin-left: 3px;
 }
 
 .elementor-counter .elementor-counter-number-prefix {
@@ -5269,6 +5269,18 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
         margin-top: 30px;
     }
 
+    #edu3 {
+        margin-top: -20px;
+    }
+
+    #edu4 {
+        margin-top: 60px;
+    }
+
+    #edu5 {
+        margin-top: -30px;
+    }
+
 
 }
 
@@ -5281,5 +5293,19 @@ body:not(.rtl) .elementor-158 .elementor-element.elementor-element-a2281d2 .elem
 @media screen and (max-width:1366px) {
     #blog2 {
         margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #edu4 {
+        margin-top: 25px;
+    }
+
+    .elementor-158 .elementor-element.elementor-element-455f691 .ekit_double_button {
+        margin-top: 10px;
+    }
+
+    #logo {
+        width: 180px;
     }
 }

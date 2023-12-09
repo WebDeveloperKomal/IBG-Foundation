@@ -816,3 +816,8 @@ body .elementor-1294 .elementor-element.elementor-element-fb6497a .elementor-lab
         width: 100%;
     }
 }
+
+.eicon-menu-bar:before {
+    /* content: "\e816"; */
+    display: none;
+}
