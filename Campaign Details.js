@@ -1,35 +1,57 @@
-function saveCampaignForm() {
+// -----------------------------save the data-----------------------------------------
 
-    var saveCampaignForm = {
 
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        number: document.getElementById('number').value
+var jwtToken = localStorage.getItem('jwtToken');
 
+function saveData() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+
+    if (!name || !email || !phone) {
+        alert('Please fill in all required fields.');
+        return;
     }
 
-    console.log(JSON.stringify(saveCampaignForm));
+    var data = {
+        name: name,
+        email: email,
+        phone: phone,
+    };
 
-    if (saveCampaignForm != null) {
-        alert("message send successfully");
-    }
-
-
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-
-
-    fetch("http://localhost:8080/add-campaignform", {
+    fetch('http://localhost:8080/foundation/auth/save-raisehandcharity', {
         method: 'POST',
-        body: JSON.stringify(saveCampaignForm),
-        headers: headers,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
     })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Server responded with error ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Server response:', data);
+            Swal.fire({
+                icon: 'success',
+                title: 'Saved!',
+                text: 'Data has been saved successfully.',
+            }).then((result) => {
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('phone').value = '';
 
-
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(error => console.error('Error:', error));
-
-
+                window.location.href = 'Compaign Details.html';
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: 'Failed to save data. Please try again.',
+            });
+        });
 }

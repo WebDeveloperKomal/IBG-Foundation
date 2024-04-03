@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="post-158.css">
     <link rel="stylesheet" href="post-1208.css">
     <link rel="stylesheet" href="post-24.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="contactUs.js"></script>
 
 
@@ -1940,8 +1942,7 @@
                                                                                     <label for="form-field-name"
                                                                                         class="elementor-field-label elementor-screen-only">
                                                                                         Name </label>
-                                                                                    <input type="text"
-                                                                                        name="form_fields[name]"
+                                                                                    <input type="text" name="name"
                                                                                         id="name"
                                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                                         placeholder="Enter Name">
@@ -1955,8 +1956,7 @@
                                                                                     <label for="form-field-email"
                                                                                         class="elementor-field-label elementor-screen-only">
                                                                                         Email </label>
-                                                                                    <input type="email"
-                                                                                        name="form_fields[email]"
+                                                                                    <input type="email" name="email"
                                                                                         id="email"
                                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                                         placeholder="Enter Email"
@@ -1974,8 +1974,7 @@
                                                                                         for="form-field-field_29c4a28"
                                                                                         class="elementor-field-label elementor-screen-only">
                                                                                         Subject </label>
-                                                                                    <input type="text"
-                                                                                        name="form_fields[field_29c4a28]"
+                                                                                    <input type="text" name="subject"
                                                                                         id="subject"
                                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                                         placeholder="Enter subject"
@@ -1985,17 +1984,14 @@
 
 
 
-
-
                                                                                 <div
                                                                                     class="elementor-field-type-number elementor-field-group elementor-column elementor-field-group-field_6f77cfe elementor-col-50 elementor-field-required">
                                                                                     <label
                                                                                         for="form-field-field_6f77cfe"
                                                                                         class="elementor-field-label elementor-screen-only">
                                                                                         Number </label>
-                                                                                    <input type="number"
-                                                                                        name="form_fields[field_6f77cfe]"
-                                                                                        id="phoneNumber"
+                                                                                    <input type="number" name="number"
+                                                                                        id="number"
                                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                                         placeholder="Enter Number"
                                                                                         required="required"
@@ -2014,8 +2010,8 @@
                                                                                         Message </label>
                                                                                     <textarea
                                                                                         class="elementor-field-textual elementor-field  elementor-size-sm"
-                                                                                        name="form_fields[message]"
-                                                                                        id="message" rows="6" placehold
+                                                                                        name="message" id="message"
+                                                                                        rows="6" placehold
                                                                                         er="Enter Message"></textarea>
                                                                                 </div>
 
@@ -2027,7 +2023,7 @@
                                                                                     class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-40 e-form__buttons">
                                                                                     <button type="submit"
                                                                                         class="elementor-button elementor-size-sm"
-                                                                                        onclick="saveContactForm(); reset(); return false;">
+                                                                                        onclick="saveData(); reset(); return false;">
                                                                                         <span>
                                                                                             <span
                                                                                                 class="elementor-button-text">Submit

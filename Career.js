@@ -1,34 +1,60 @@
-function saveCareerForm() {
+// -----------------------------save the data-----------------------------------------
 
-    var saveCareerForm = {
 
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        position: document.getElementById('position').value,
-        message: document.getElementById('message').value
+var jwtToken = localStorage.getItem('jwtToken');
+
+function saveData() {
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var position = document.getElementById('position').value;
+    var message = document.getElementById('message').value;
+
+    if (!fullName || !email || !position || !message) {
+        alert('Please fill in all required fields.');
+        return;
     }
 
-    console.log(JSON.stringify(saveCareerForm));
+    var data = {
+        fullName: fullName,
+        email: email,
+        position: position,
+        message: message,
+    };
 
-    if (saveCareerForm != null) {
-        alert("message send successfully!")
-
-    }
-
-
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-
-
-    fetch("http://localhost:8080/add-careerform", {
+    fetch('http://localhost:8080/foundation/auth/save-beavolunteer', {
         method: 'POST',
-        body: JSON.stringify(saveCareerForm),
-        headers: headers,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
     })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Server responded with error ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Server response:', data);
+            Swal.fire({
+                icon: 'success',
+                title: 'Saved!',
+                text: 'Data has been saved successfully.',
+            }).then((result) => {
+                document.getElementById('fullName').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('position').value = '';
+                document.getElementById('message').value = '';
 
-
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .then(error => console.error('Error:', error));
+                window.location.href = 'Pages-Career.html';
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: 'Failed to save data. Please try again.',
+            });
+        });
 }

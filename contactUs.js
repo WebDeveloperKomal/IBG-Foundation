@@ -1,35 +1,65 @@
-function saveContactForm() {
+// -----------------------------save the data-----------------------------------------
 
-    var saveContactForm = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        phoneNumber: document.getElementById('phoneNumber').value,
-        message: document.getElementById('message').value
+
+var jwtToken = localStorage.getItem('jwtToken');
+
+function saveData() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var number = document.getElementById('number').value;
+    var message = document.getElementById('message').value;
+
+    if (!name || !email || !subject || !number || !message) {
+        alert('Please fill in all required fields.');
+        return;
     }
 
-    console.log(JSON.stringify(saveContactForm));
+    var data = {
+        name: name,
+        email: email,
+        subject: subject,
+        number: number,
+        message: message,
+    };
 
-    if (saveContactForm != null) {
-        alert("message send successfully!")
-
-    }
-
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-
-
-    fetch("http://localhost:8080/add-contactform", {
+    fetch('http://localhost:8080/foundation/auth/save-contactus', {
         method: 'POST',
-        body: JSON.stringify(saveContactForm),
-        headers: headers,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
     })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Server responded with error ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Server response:', data);
+            Swal.fire({
+                icon: 'success',
+                title: 'Saved!',
+                text: 'Data has been saved successfully.',
+            }).then((result) => {
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('subject').value = '';
+                document.getElementById('number').value = '';
+                document.getElementById('message').value = '';
 
+                window.location.href = 'Contact Us.html';
+            });
+        })
 
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(error => console.error('Error:', error));
-
-
+        .catch(error => {
+            console.error('Error:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: 'Failed to save data. Please try again.',
+            });
+        });
 }
+

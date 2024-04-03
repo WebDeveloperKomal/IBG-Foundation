@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="post-1294.css">
     <link rel="stylesheet" href="post-24.css">
     <link rel="stylesheet" href="post-158.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="Campaign Details.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -2321,8 +2323,7 @@
                                                                     <label for="form-field-name"
                                                                         class="elementor-field-label elementor-screen-only">
                                                                         Name </label>
-                                                                    <input size="1" type="text" name="form_fields[name]"
-                                                                        id="name"
+                                                                    <input size="1" type="text" name="name" id="name"
                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                         placeholder="Enter Name*">
                                                                 </div>
@@ -2335,8 +2336,7 @@
                                                                     <label for="form-field-field_5accbcf"
                                                                         class="elementor-field-label elementor-screen-only">
                                                                         Email </label>
-                                                                    <input size="1" type="email"
-                                                                        name="form_fields[field_5accbcf]" id="email"
+                                                                    <input size="1" type="email" name="email" id="email"
                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                         placeholder="Enter Email*" required="required"
                                                                         aria-required="true">
@@ -2350,8 +2350,7 @@
                                                                     <label for="form-field-email"
                                                                         class="elementor-field-label elementor-screen-only">
                                                                         Number </label>
-                                                                    <input type="number" name="form_fields[email]"
-                                                                        id="number"
+                                                                    <input type="number" name="phone" id="phone"
                                                                         class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                         placeholder="Enter Phone No.*"
                                                                         required="required" aria-required="true" min=""
@@ -2366,7 +2365,7 @@
 
                                                                     <button type="submit"
                                                                         class="elementor-button elementor-size-sm"
-                                                                        onclick="saveCampaignForm(); reset(); return false;">
+                                                                        onclick="saveData(); reset(); return false;">
 
                                                                         <span>
                                                                             <span class=" elementor-button-icon">

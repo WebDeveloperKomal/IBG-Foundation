@@ -1,100 +1,61 @@
-function saveForm() {
+// -----------------------------save the data-----------------------------------------
 
-    var saveForm = {
 
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phoneno: document.getElementById("phoneno").value,
-        zipcode: document.getElementById("zipcode").value
+var jwtToken = localStorage.getItem('jwtToken');
+
+function saveData() {
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var zipcode = document.getElementById('zipcode').value;
+
+    if (!fullName || !email || !phone || !zipcode) {
+        alert('Please fill in all required fields.');
+        return;
     }
 
-    console.log(JSON.stringify(saveForm));
+    var data = {
+        fullName: fullName,
+        email: email,
+        phone: phone,
+        zipcode: zipcode,
+    };
 
-    if (saveForm != mull) {
-        alert("message send successfully!")
-    }
-
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-
-
-    fetch("http://localhost:8080/add-ctaform", {
+    fetch('http://localhost:8080/foundation/auth/call-to-action', {
         method: 'POST',
-        body: JSON.stringify(saveForm),
-        headers: headers,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
     })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Server responded with error ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Server response:', data);
+            Swal.fire({
+                icon: 'success',
+                title: 'Saved!',
+                text: 'Data has been saved successfully.',
+            }).then((result) => {
+                document.getElementById('fullName').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('zipcode').value = '';
 
-
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(error => console.error('Error:', error));
+                window.location.href = 'index.html';
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: 'Failed to save data. Please try again.',
+            });
+        });
 }
 
-
-
-// -----------------------------------------------------------------------------------------
-
-
-
-// function saveForm() {
-//     // Get form values
-//     var name = document.getElementById("name").value;
-//     var email = document.getElementById("email").value;
-//     var phoneno = document.getElementById("phoneno").value;
-//     var zipcode = document.getElementById("zipcode").value;
-
-//     // Validate name
-//     if (name.trim() === "") {
-//         alert("Please enter your name.");
-//         return;
-//     }
-
-//     // Validate email
-//     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     if (!emailRegex.test(email)) {
-//         alert("Please enter a valid email address.");
-//         return;
-//     }
-
-//     // Validate phone number
-//     var phoneRegex = /^\d{10}$/; // Assumes a 10-digit phone number
-//     if (!phoneRegex.test(phoneno)) {
-//         alert("Please enter a valid 10-digit phone number.");
-//         return;
-//     }
-
-//     // Validate zipcode
-//     var zipcodeRegex = /^\d{5}$/; // Assumes a 5-digit zipcode
-//     if (!zipcodeRegex.test(zipcode)) {
-//         alert("Please enter a valid 5-digit zipcode.");
-//         return;
-//     }
-
-//     // Create form data object
-//     var saveForm = {
-//         name: name,
-//         email: email,
-//         phoneno: phoneno,
-//         zipcode: zipcode
-//     };
-
-//     console.log(JSON.stringify(saveForm));
-
-//     // Send form data using fetch
-//     let headers = new Headers();
-//     headers.append("Content-Type", "application/json");
-//     headers.append("Accept", "application/json");
-
-//     fetch("http://localhost:8080/add-ctaform", {
-//         method: "POST",
-//         body: JSON.stringify(saveForm),
-//         headers: headers
-//     })
-//         .then(response => response.json())
-//         .then(json => console.log(json))
-//         .catch(error => console.error("Error:", error));
-
-//     // Display success message
-//     alert("Message sent successfully!");
-// }
